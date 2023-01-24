@@ -32,7 +32,7 @@ export default function Header() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1, outline: '1px red solid' }}>
-            News
+            '{header}'
           </Typography>
           <Button color="inherit" sx={{outline:'1px solid yellow'}}>Login</Button>
         </Toolbar>
