@@ -20,6 +20,8 @@ function App() {
   //   // [theme.breakpoints.]
   // }))
 
+  // May use these later ^^^^^ not sure as of yet
+
   return (
     <div className="App">
       {/* Header Components goes here */}
