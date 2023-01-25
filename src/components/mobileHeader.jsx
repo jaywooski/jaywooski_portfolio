@@ -8,7 +8,7 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Menu, MenuItem, Paper } from '@mui/material';
 import { styled } from '@mui/system';
-import { Link } from '@mui/icons-material';
+import { Link } from 'react-scroll';
 
 export default function MobileHeader() {
 
@@ -57,10 +57,18 @@ export default function MobileHeader() {
           >
             {/* Add Links to pages to visit throughout portfolio */}
             <Paper className='menu mobile'>
-              <MenuItem sx={{justifyContent:'center', borderTop:'1px solid #0B24B6', borderBottom:'1px solid #0B24B6', }} onClick={handleClose}>Home</MenuItem>
-              <MenuItem sx={{justifyContent:'center', borderBottom:'1px solid #0B24B6', }} onClick={handleClose}>About Me</MenuItem>
-              <MenuItem sx={{justifyContent:'center', borderBottom:'1px solid #0B24B6', }} onClick={handleClose}>Projects</MenuItem>
-              <MenuItem sx={{justifyContent:'center'}} onClick={handleClose}>Contact</MenuItem>
+              <MenuItem sx={{justifyContent:'center', borderTop:'1px solid #0B24B6', borderBottom:'1px solid #0B24B6', }} onClick={handleClose}>
+                <Link to='home'>Home</Link>
+              </MenuItem>
+              <MenuItem sx={{justifyContent:'center', borderBottom:'1px solid #0B24B6', }} onClick={handleClose}>
+                <Link to='about'>About Me</Link>
+                </MenuItem>
+              <MenuItem sx={{justifyContent:'center', borderBottom:'1px solid #0B24B6', }} onClick={handleClose}>
+                <Link to='projects'>Projects</Link>
+                </MenuItem>
+              <MenuItem sx={{justifyContent:'center'}} onClick={handleClose}>
+                <Link to='contact'>Contact</Link>
+                </MenuItem>
             </Paper>
           </Menu>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1, outline: '1px red solid' }}>
