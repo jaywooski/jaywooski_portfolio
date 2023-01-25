@@ -16,6 +16,16 @@ code {
   display: none;
 }
 
+.menu {
+  width: 90vw;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: center;
+  color: pink;
+}
+
 .mobile {
   display: block;
 }
