@@ -18,15 +18,23 @@ import IconButton from '@mui/material/IconButton';
 import Icon from '@mui/material/Icon';
 import MenuIcon from '@mui/icons-material/Menu';
 import { styled } from '@mui/system';
-import { Link } from '@mui/icons-material';
+import { Link } from 'react-scroll';
 import { Avatar, SvgIcon } from '@mui/material'
 import customLogo from "../assets/static/Logo_concept_2.png"
 
 
 export default function Header() {
-  const logoBox = () => styled(Box)(({theme}) => ({
-    // add custom stylings to box here if necessary
-  }))
+  // const navBox = () => styled(Box)(({theme}) => ({
+  //   // add custom stylings to box here if necessary
+  //     display: "flex",
+  //     // alignItems: "center",
+  //     // justifyContent: "space-Around",
+  //     // gap: "5rem",
+  //     // flexGrow: 1,
+  //     [theme.breakpoints.down("sm")]: {
+  //       marginTop: "2rem",
+  //     },
+  // }))
 
   return (
     <Box className='desktop' sx={{ flexGrow: 1 }}>
@@ -42,13 +50,16 @@ export default function Header() {
           <Typography variant="h6" 
                       component="div" 
                       //*******************Outline here******************
-                      sx={{ flexGrow: 1, outline: '1px red solid' }}> 
+                      sx={{ flexGrow: 2, /*outline: '1px red solid'*/ }}> 
             Jaywooski Desktop
           </Typography>
-          <Box>
-            {/* Navigation Links here */}
-          </Box>
-          {/* <Button color="inherit" sx={{outline:'1px solid yellow'}}>Login</Button> */}
+            {/* Navigation Links here using custom styled Box */}
+            <Box sx={{/*outline: '1px solid yellow',*/ display:'flex', flexGrow: 1, justifyContent: 'space-around' }}>
+              <Link to='home' smooth>Home</Link>
+              <Link to='about' smooth>About</Link>
+              <Link to='projects' smooth>Projects</Link>
+              <Link to='contact' smooth>Contact</Link>
+            </Box>
         </Toolbar>
       </AppBar>
     </Box>

@@ -6,6 +6,8 @@ import Header from './components/header';
 import MobileHeader from './components/mobileHeader';
 import styled from '@emotion/styled';
 import { Box } from '@mui/system';
+import Hero from './components/hero';
+
 
 function App() {
 
@@ -27,6 +29,7 @@ function App() {
       {/* Header Components goes here */}
       <Header />
       <MobileHeader />
+      <Hero />
 
       {/* Add react router and switch statement */}
       {/* Footer Component goes here */}

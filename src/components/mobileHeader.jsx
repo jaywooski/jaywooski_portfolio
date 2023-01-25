@@ -38,7 +38,7 @@ export default function MobileHeader() {
             aria-controls={open ? 'basic-menu' : undefined}
             aria-haspopup="true"
             aria-expanded={open ? 'true' : undefined}
-            sx={{ mr: 2, outline: '1px solid purple'  }}
+  sx={{ mr: 2, /*outline: '1px solid purple'*/  }}
             onClick={handleClick}
           >
             <MenuIcon />
