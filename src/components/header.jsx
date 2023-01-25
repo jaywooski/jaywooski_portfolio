@@ -20,7 +20,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { styled } from '@mui/system';
 import { Link } from 'react-scroll';
 import { Avatar, SvgIcon } from '@mui/material'
-import customLogo from "../assets/static/Logo_concept_2.png"
+import customLogo from "../assets/static/Logo_concept_3.png"
 
 
 export default function Header() {
@@ -42,7 +42,7 @@ export default function Header() {
         <Toolbar>
           <Box
             component='img'
-            sx={{ width: 56, height: 56, mr: 2, objectFit:'cover'}}
+            sx={{ width: 120, /*height: 60,*/ mr: 2, objectFit:'cover', color:'white'}}
             src={customLogo}
           />
 
@@ -50,8 +50,8 @@ export default function Header() {
           <Typography variant="h6" 
                       component="div" 
                       //*******************Outline here******************
-                      sx={{ flexGrow: 2, /*outline: '1px red solid'*/ }}> 
-            Jaywooski Desktop
+                      sx={{ display:'flex', justifyContent:'left', letterSpacing: 7, textTransform:'uppercase', flexGrow: 2, /*outline: '1px red solid'*/ }}> 
+            Portfolio
           </Typography>
             {/* Navigation Links here using custom styled Box */}
             <Box sx={{/*outline: '1px solid yellow',*/ display:'flex', flexGrow: 1, justifyContent: 'space-around' }}>
