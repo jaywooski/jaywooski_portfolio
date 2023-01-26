@@ -58,7 +58,10 @@ export default function Hero() {
       </Typography>
       <CustomText variant="h1" sx={{color:'white',}}>
         If you can <span style={{ color: "rgba(0,199,255,255)" }}>Dream</span>{" "}
-        it, I can build it...<span style={{ color: "rgba(0,199,255,255)" }}>Big</span>
+        it, 
+      </CustomText>
+      <CustomText variant='h1' sx={{color:'white'}}>
+      I can build it...<span style={{ color: "rgba(0,199,255,255)" }}>Big</span>
       </CustomText>
 
       <Box
@@ -83,7 +86,7 @@ export default function Hero() {
             backgroundColor: 'black'
         }}
         />
-
+        {/* Create functionality for contact me button */}
         <CustomButton>Contact Me</CustomButton>
       </Box>
     </Box>

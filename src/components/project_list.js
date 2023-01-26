@@ -6,7 +6,7 @@ import WA_Image from '../assets/static/Weather_App_Preview.png'
 export const project_list = [
     {
         title: 'QR-Code-Comp',
-        description: 'A simple QR code app provided by Frontend Mentor',
+        description: 'A QR code app provided by Frontend Mentor',
         image: QR_Code,
         tags: ['HTML', 'CSS'],
         source: 'https://github.com/jaywooski/QR-Code-Comp',
@@ -16,7 +16,7 @@ export const project_list = [
     
     {
         title: 'Programmer Dashboard',
-        description: 'A simple dashboard utilizing third party APIs which keeps track of recent articles appealing to programmers like ourselves.',
+        description: 'A dashboard utilizing third party APIs which keeps track of recent articles appealing to programmers like ourselves.',
         image: PD_Image,
         tags: ['JavaScript','HTML', 'CSS', 'API'],
         source: 'https://github.com/jaywooski/Programmer-Dashboard',
@@ -26,7 +26,7 @@ export const project_list = [
 
     {
         title: 'Wooley Weather',
-        description: 'A simple weather checking app dashboard using OpenWeatherMap API functionality',
+        description: 'A weather checking app dashboard using OpenWeatherMap API functionality',
         image: WA_Image,
         tags: ['JavaScript', 'HTML', 'CSS', 'API'],
         source: 'https://github.com/jaywooski/Wooley-Weather-Dashboard-Chal-6',
