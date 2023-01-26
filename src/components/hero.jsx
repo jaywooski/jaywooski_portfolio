@@ -4,7 +4,7 @@ import Box from "@mui/material/Box";
 import { styled } from '@mui/system';
 import {Button} from "@mui/material";
 
-import heroImage from '../assets/static/IMG_6786.PNG'
+import heroImage from '../assets/static/IMG_0187.jpg'
 
 export default function Hero() {
 
@@ -57,9 +57,8 @@ export default function Hero() {
         Hello, I'm John
       </Typography>
       <CustomText variant="h1" sx={{color:'white',}}>
-        I enjoy <span style={{ color: "rgba(0,199,255,255)" }}>building</span>{" "}
-        and <span style={{ color: "rgba(0,199,255,255)" }}>designing</span> for
-        the web.
+        If you can <span style={{ color: "rgba(0,199,255,255)" }}>Dream</span>{" "}
+        it, I can build it...<span style={{ color: "rgba(0,199,255,255)" }}>Big</span>
       </CustomText>
 
       <Box
@@ -73,15 +72,16 @@ export default function Hero() {
       >
         <Box
           component="img"
+          src={heroImage}
+          className='hero'
           sx={{
-            height: 250,
-            width: 150,
-            mt: 4,
-            mb: 4,
+            minHeight: 250,
+            minWidth: 250,
+            maxwidth: 750,
+            maxHeight: 750,
+            my: 4,
             backgroundColor: 'black'
         }}
-        src={heroImage}
-        //   src={reactImg}
         />
 
         <CustomButton>Contact Me</CustomButton>

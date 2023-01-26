@@ -25,6 +25,18 @@ export default function MobileHeader() {
     setAnchorEl(null);
   };
 
+  // Create style for menu items in object
+  const menu_style = {
+    justifyContent:'center',
+    borderTop:'1px solid #0B24B6',
+    borderBottom:'1px solid #0B24B6',
+    letterSpacing: 4,
+    textTransform: 'uppercase',
+    fontWeight: '700',
+    color: 'white',
+    backgroundColor:'#1B3B91'
+}
+
   return (
     <Box className='mobile' sx={{ flexGrow: 1 }}>
       <AppBar position="static" sx={{backgroundColor: '#030929'}}/*add styling here*/ >
@@ -38,13 +50,15 @@ export default function MobileHeader() {
             aria-controls={open ? 'basic-menu' : undefined}
             aria-haspopup="true"
             aria-expanded={open ? 'true' : undefined}
-  sx={{ mr: 2, /*outline: '1px solid purple'*/  }}
+            sx={{ mr: 2,}}
             onClick={handleClick}
           >
             <MenuIcon />
           </IconButton>
 
           {/* Menu component for mobile usage */}
+
+          {/* Work on functionality of menu!!!!!!!!!!!!! */}
           <Menu
             id="basic-menu"
             anchorEl={anchorEl}
@@ -57,22 +71,22 @@ export default function MobileHeader() {
           >
             {/* Add Links to pages to visit throughout portfolio */}
             <Paper className='menu mobile'>
-              <MenuItem sx={{justifyContent:'center', borderTop:'1px solid #0B24B6', borderBottom:'1px solid #0B24B6', }} onClick={handleClose}>
+              <MenuItem sx={menu_style} onClick={handleClose}>
                 <Link to='home'>Home</Link>
               </MenuItem>
-              <MenuItem sx={{justifyContent:'center', borderBottom:'1px solid #0B24B6', }} onClick={handleClose}>
+              <MenuItem sx={menu_style} onClick={handleClose}>
                 <Link to='about'>About Me</Link>
                 </MenuItem>
-              <MenuItem sx={{justifyContent:'center', borderBottom:'1px solid #0B24B6', }} onClick={handleClose}>
+              <MenuItem sx={menu_style} onClick={handleClose}>
                 <Link to='projects'>Projects</Link>
                 </MenuItem>
-              <MenuItem sx={{justifyContent:'center'}} onClick={handleClose}>
+              <MenuItem sx={menu_style} onClick={handleClose}>
                 <Link to='contact'>Contact</Link>
                 </MenuItem>
             </Paper>
           </Menu>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1, outline: '1px red solid' }}>
-            Jaywooski mobile
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1, letterSpacing: 7, textTransform: 'uppercase' }}>
+            Jaywooski
           </Typography>
           {/* <Button color="inherit" sx={{outline:'1px solid yellow'}}>Login</Button> */}
         </Toolbar>

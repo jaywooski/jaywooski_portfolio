@@ -16,14 +16,13 @@ code {
   display: none;
 }
 
-.menu {
-  width: 90vw;
+.hero {
+  height: 250px;
+  width: 250px;
 }
 
-.menu-item {
-  display: flex;
-  justify-content: center;
-  color: pink;
+.menu {
+  width: 90vw;
 }
 
 .mobile {
@@ -36,7 +35,30 @@ code {
     display: block;
   }
 
+  .hero {
+    height: 500px;
+    width: 500px;
+  }
+
   .mobile {
     display: none;
   }
+}
+
+@media (min-width: 1024px){
+  
+  .hero {
+    height: 800px;
+    width: 700px;
+  }
+
+}
+
+@media (min-width: 1400px){
+  
+  .hero {
+    height: 1000px;
+    width: 800px;
+  }
+
 }
