@@ -39,7 +39,7 @@ export default function MobileHeader() {
 
   return (
     <Box className='mobile' sx={{ flexGrow: 1 }}>
-      <AppBar position="static" sx={{backgroundColor: '#030929'}}/*add styling here*/ >
+      <AppBar position="fixed" sx={{backgroundColor: '#030929'}}/*add styling here*/ >
         <Toolbar>
           <IconButton
             id='basic-button'

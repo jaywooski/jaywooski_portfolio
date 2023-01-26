@@ -41,7 +41,7 @@ export default function Hero() {
   return (
     <Box
       sx={{
-        mt: 8,
+        mt: 6,
         mb: 12,
         p: 2,
         maxWidth: "1200px",
