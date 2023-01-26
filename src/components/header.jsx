@@ -37,8 +37,8 @@ export default function Header() {
   // }))
 
   return (
-    <Box className='desktop' sx={{ flexGrow: 1 }}>
-      <AppBar position="static" sx={{backgroundColor: '#030929'}}>
+    <Box className='desktop' sx={{ flexGrow: 1, mb: 8 }}>
+      <AppBar position="fixed" sx={{backgroundColor: '#030929'}}>
         <Toolbar>
           <Box
             component='img'

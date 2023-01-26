@@ -5,7 +5,7 @@ import { Box } from "@mui/system";
   
 const ProjectCard = ({ title, description, tags, img }) => {
     return (
-        <Card sx={{ maxWidth: 375, margin: "1rem" }}>
+        <Card sx={{ /* transform: 'rotate(90deg)',*/ transformOrigin: 'right top', maxHeight: 550, maxWidth: 375, margin: "1rem", borderRadius: 8 }}>
             <CardActionArea>
                 <CardMedia component="img" image={img} sx={{height: '275px'}} />
                 <CardContent>

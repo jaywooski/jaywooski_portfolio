@@ -9,6 +9,8 @@ import { Box } from '@mui/system';
 import Hero from './components/hero';
 import ProjectCard from './components/ProjectCard';
 import Projects from './components/projects';
+import Footer from './components/Footer';
+import About from './components/About';
 
 
 function App() {
@@ -32,10 +34,12 @@ function App() {
       <Header />
       <MobileHeader />
       <Hero />
+      <About />
       <Projects />
 
       {/* Add react router and switch statement */}
       {/* Footer Component goes here */}
+      <Footer />
     </div>
   );
 }

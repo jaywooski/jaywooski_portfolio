@@ -32,5 +32,6 @@ export const project_list = [
         source: 'https://github.com/jaywooski/Wooley-Weather-Dashboard-Chal-6',
         liveVersion: 'https://jaywooski.github.io/Wooley-Weather-Dashboard-Chal-6/',
         id: 3
-    }
+    },
+
 ]
