@@ -6,7 +6,7 @@ import {Button} from "@mui/material";
 import { Download } from '@mui/icons-material';
 
 import heroImage from '../assets/static/IMG_0187.jpg'
-// import resume from ''
+import resume from '../assets/static/Wooley_Resume.pdf'
 
 export default function Hero() {
 
@@ -43,8 +43,8 @@ export default function Hero() {
 
     const download = () => {
       const link = document.createElement('a');
-      link.download = 'picture.jpg' ;
-      link.href = heroImage;
+      link.download = 'Wooley_Resume' ;
+      link.href = resume;
       link.click();
     }
     
