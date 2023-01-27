@@ -3,6 +3,7 @@ import { Typography } from "@mui/material";
 import Box from "@mui/material/Box";
 import { styled } from '@mui/system';
 import {Button} from "@mui/material";
+import { Download } from '@mui/icons-material';
 
 import heroImage from '../assets/static/IMG_0187.jpg'
 
@@ -22,7 +23,7 @@ export default function Hero() {
           width: "35%",
         },
         [theme.breakpoints.down("sm")]: {
-          width: "50%",
+          width: "45%",
         },
       }));
 
@@ -86,8 +87,13 @@ export default function Hero() {
             backgroundColor: 'black'
         }}
         />
-        {/* Create functionality for contact me button */}
-        <CustomButton>Contact Me</CustomButton>
+        <Box sx={{display: 'flex', justifyContent:'space-around', width:'100%'}}>
+          {/* Create functionality for contact me button */}
+          <CustomButton>Contact Me</CustomButton>
+
+          {/* Custom Button for Downloading RESUME!!! */}
+          <CustomButton><Download sx={{mr:1}}/> Resume</CustomButton>
+        </Box>
       </Box>
     </Box>
    )

@@ -29,6 +29,14 @@ code {
   display: block;
 }
 
+.experience {
+  /* max-height: ; */
+}
+
+.text-box {
+
+}
+
 @media (min-width: 768px){
   .desktop {
 
@@ -45,6 +53,15 @@ code {
   }
 }
 
+@media screen and (max-width: 600px) {
+
+  .experience {
+    /* max-height: 450px;
+    overflow: scroll; */
+  }
+}
+
+
 @media (min-width: 1024px){
   
   .hero {
@@ -53,6 +70,7 @@ code {
   }
 
 }
+
 
 @media (min-width: 1400px){
   
