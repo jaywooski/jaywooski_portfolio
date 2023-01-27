@@ -18,6 +18,8 @@ export default function Hero() {
         "&:hover": {
           border: "3px solid white",
           backgroundColor: "transparent",
+          transition: 'ease-in-out',
+          transitionDuration: '400ms'
         },
         [theme.breakpoints.down("md")]: {
           width: "35%",
@@ -37,6 +39,13 @@ export default function Hero() {
           fontSize: "2.5rem",
         },
     }));
+
+    const download = () => {
+      const link = document.createElement('a');
+      link.download = 'picture_of_me.jpg' ;
+      link.href = '../public/Logo_concept_2.jpg';
+      link.click();
+    }
     
 
   return (
@@ -89,10 +98,12 @@ export default function Hero() {
         />
         <Box sx={{display: 'flex', justifyContent:'space-around', width:'100%'}}>
           {/* Create functionality for contact me button */}
-          <CustomButton>Contact Me</CustomButton>
+          <CustomButton href='mailto:john.m.wooley@gmail.com'>Contact Me</CustomButton>
 
           {/* Custom Button for Downloading RESUME!!! */}
-          <CustomButton><Download sx={{mr:1}}/> Resume</CustomButton>
+          <CustomButton variant='contained'>
+            <a href='src\assets\static\IMG_6786.PNG' target={'_blank'} download><Download sx={{mr:1}}/> Resume </a>
+          </CustomButton>
         </Box>
       </Box>
     </Box>

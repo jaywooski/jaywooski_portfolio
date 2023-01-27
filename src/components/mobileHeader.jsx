@@ -55,6 +55,7 @@ export default function MobileHeader() {
             aria-expanded={open ? 'true' : undefined}
             sx={{ mr: 2,}}
             onClick={handleClick}
+            className='nav'
           >
             <MenuIcon />
           </IconButton>
