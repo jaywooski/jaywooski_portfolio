@@ -6,6 +6,7 @@ import {Button} from "@mui/material";
 import { Download } from '@mui/icons-material';
 
 import heroImage from '../assets/static/IMG_0187.jpg'
+// import resume from ''
 
 export default function Hero() {
 
@@ -29,6 +30,31 @@ export default function Hero() {
         },
       }));
 
+      // const CustomDownloadButton = styled(Button)(({ theme }) => ({
+      //   // display: 'flex',
+      //   // justifyContent: 'center',
+      //   // alignContent: 'center',
+      //   border: "3px solid transparent",
+      //   backgroundColor: "#00C7FF",
+      //   color: "white",
+      //   width: "20%",
+      //   borderRadius: "25px",
+      //   "&:hover": {
+      //     border: "3px solid white",
+      //     backgroundColor: "transparent",
+      //     transition: 'ease-in-out',
+      //     transitionDuration: '400ms',
+      //     cursor: 'pointer'
+      //   },
+      //   [theme.breakpoints.down("md")]: {
+      //     width: "35%",
+      //   },
+      //   [theme.breakpoints.down("sm")]: {
+      //     width: "45%",
+      //   },
+      // }));
+    
+
     const CustomText = styled(Typography)(({theme}) => ({
         color: "white",
         textAlign: "center",
@@ -42,8 +68,8 @@ export default function Hero() {
 
     const download = () => {
       const link = document.createElement('a');
-      link.download = 'picture_of_me.jpg' ;
-      link.href = '../public/Logo_concept_2.jpg';
+      link.download = 'picture.jpg' ;
+      link.href = heroImage;
       link.click();
     }
     
@@ -101,9 +127,10 @@ export default function Hero() {
           <CustomButton href='mailto:john.m.wooley@gmail.com'>Contact Me</CustomButton>
 
           {/* Custom Button for Downloading RESUME!!! */}
-          <CustomButton variant='contained'>
-            <a href='src\assets\static\IMG_6786.PNG' target={'_blank'} download><Download sx={{mr:1}}/> Resume </a>
+          <CustomButton variant='contained' onClick={download}>
+            <Download sx={{mr:1}}/> Resume
           </CustomButton>
+          
         </Box>
       </Box>
     </Box>

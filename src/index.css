@@ -16,6 +16,14 @@ code {
   display: none;
 }
 
+.download {
+  text-decoration: none;
+  color: white;
+  display: inline-flex;
+  width: 20%;
+  justify-content: center;
+}
+
 .hero {
   height: 250px;
   width: 250px;
@@ -62,8 +70,21 @@ code {
 }
 
 .nav:active {
-  /* border-bottom: 2px;
-  border-color: white; */
+
+}
+
+/*small theme breakpoints with theme @ 600px*/
+@media screen & (max-width: 600px) {
+  .download {
+    width: 45%;
+  }
+}
+
+/*medium theme breakpoints with theme @ 900px*/
+@media (max-width: 900px) {
+  .download {
+    width: 35%;
+  }
 }
 
 
