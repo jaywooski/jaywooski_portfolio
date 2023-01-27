@@ -42,7 +42,7 @@ export default function Header() {
         <Toolbar>
           <Box
             component='img'
-            sx={{ width: 120, /*height: 60,*/ mr: 2, objectFit:'cover', color:'white'}}
+            sx={{ width: 120, mr: 2, objectFit:'cover', color:'white'}}
             src={customLogo}
           />
 

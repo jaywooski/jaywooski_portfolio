@@ -71,18 +71,31 @@ export default function MobileHeader() {
           >
             {/* Add Links to pages to visit throughout portfolio */}
             <Paper className='menu mobile'>
-              <MenuItem sx={menu_style} onClick={handleClose}>
-                <Link to='home'>Home</Link>
-              </MenuItem>
-              <MenuItem sx={menu_style} onClick={handleClose}>
-                <Link to='about'>About Me</Link>
+              
+              <Link to='home' smooth>
+                <MenuItem sx={menu_style} onClick={handleClose}>
+                  Home
                 </MenuItem>
-              <MenuItem sx={menu_style} onClick={handleClose}>
-                <Link to='projects'>Projects</Link>
+              </Link>
+
+              <Link to='about' smooth>
+                <MenuItem sx={menu_style} onClick={handleClose}>
+                  About Me
                 </MenuItem>
-              <MenuItem sx={menu_style} onClick={handleClose}>
-                <Link to='contact'>Contact</Link>
+              </Link>
+              
+              <Link to='projects' smooth>
+                <MenuItem sx={menu_style} onClick={handleClose}>
+                  Projects
                 </MenuItem>
+              </Link>
+              
+              <Link to='mailto:john.m.wooley@gmail.com' style={{textUnderline: 'none'}} smooth>
+                <MenuItem sx={menu_style} onClick={handleClose}>
+                  Contact
+                </MenuItem>
+              </Link>
+
             </Paper>
           </Menu>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1, letterSpacing: 7, textTransform: 'uppercase' }}>

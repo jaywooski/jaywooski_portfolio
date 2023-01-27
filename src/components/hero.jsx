@@ -69,7 +69,7 @@ export default function Hero() {
         sx={{
           display: "flex",
           flexDirection: "column",
-          alignItems: "center",
+          alignItems: "center", 
           justifyContent: "center",
           gap: "1rem",
         }}
