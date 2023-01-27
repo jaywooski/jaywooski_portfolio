@@ -86,7 +86,7 @@ export default function About() {
                 />
                 <CustomTextBox classes='textBox'>
                     <Typography variant='h4' sx={{padding: 3, borderBottom: '1px solid white'}}> My Experience</Typography>
-                    <Typography variant='h6' sx={{ maxHeight: '450px', overflow:'scroll', backgroundColor:'#040d1a', paddingX: 1}}>
+                    <Typography variant='h6' sx={{ maxHeight: '450px', overflow:'scroll', overflowX:'hidden', overflowY:'auto', backgroundColor:'#040d1a', paddingX: 1}}>
                         Hello, My name is John Wooley. 
                         I{`'`}m a full-stack developer, with history in computer engineering (University of Tennessee at Chattanooga) looking to help build more dynamic
                         experiences for users on the web. I earned my certificate in full stack development from Vanderbilt University.

@@ -59,6 +59,7 @@ export default function Footer() {
         </Box>
 
       <Box
+        id='contact'
         sx={{
           display: "flex",
           flexDirection: "column",

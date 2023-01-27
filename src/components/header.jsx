@@ -55,10 +55,11 @@ export default function Header() {
           </Typography>
             {/* Navigation Links here using custom styled Box */}
             <Box sx={{/*outline: '1px solid yellow',*/ display:'flex', flexGrow: 1, justifyContent: 'space-around' }}>
-              <Link to='home' smooth>Home</Link>
-              <Link to='about' smooth>About</Link>
-              <Link to='projects' smooth>Projects</Link>
-              <Link to='contact' smooth>Contact</Link>
+              <Link to='home' className='nav' smooth>Home</Link>
+              <Link to='about' className='nav' smooth>About</Link>
+              <Link to='projects' className='nav' smooth>Projects</Link>
+              <Link to='contact' className='nav' smooth>Contact</Link>
+              {/* <Box component='a' href='mailto:john.m.wooley@gmail.com' className='nav' smooth>Contact</Box> */}
             </Box>
         </Toolbar>
       </AppBar>

@@ -9,6 +9,8 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { Menu, MenuItem, Paper } from '@mui/material';
 import { styled } from '@mui/system';
 import { Link } from 'react-scroll';
+import * as URL from '@mui/material/Link';
+
 
 export default function MobileHeader() {
 
@@ -35,6 +37,7 @@ export default function MobileHeader() {
     fontWeight: '700',
     color: 'white',
     backgroundColor:'#1B3B91'
+    // backgroundColor: '#96bffa'
 }
 
   return (
@@ -72,29 +75,33 @@ export default function MobileHeader() {
             {/* Add Links to pages to visit throughout portfolio */}
             <Paper className='menu mobile'>
               
-              <Link to='home' smooth>
-                <MenuItem sx={menu_style} onClick={handleClose}>
+              <Link to='home' className='link' smooth onClick={handleClose}>
+                <MenuItem className='link' sx={menu_style} >
                   Home
                 </MenuItem>
               </Link>
 
-              <Link to='about' smooth>
-                <MenuItem sx={menu_style} onClick={handleClose}>
+              <Link to='about' className='link' smooth onClick={handleClose}>
+                <MenuItem className='link' sx={menu_style} >
                   About Me
                 </MenuItem>
               </Link>
               
-              <Link to='projects' smooth>
-                <MenuItem sx={menu_style} onClick={handleClose}>
+              <Link to='projects' className='link' smooth onClick={handleClose}>
+                <MenuItem className='link' sx={menu_style} >
                   Projects
                 </MenuItem>
               </Link>
               
-              <Link to='mailto:john.m.wooley@gmail.com' style={{textUnderline: 'none'}} smooth>
-                <MenuItem sx={menu_style} onClick={handleClose}>
+              <Box
+                  component='a'
+                  href='mailto:john.m.wooley@gmail.com' 
+                  className='link'
+                  onClick={handleClose}>
+                <MenuItem className='link' sx={menu_style} >
                   Contact
                 </MenuItem>
-              </Link>
+              </Box>
 
             </Paper>
           </Menu>
