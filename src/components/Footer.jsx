@@ -1,14 +1,15 @@
 import * as React from 'react'
-import { Box, Typography } from "@mui/material";
+import { Box, Divider, Typography } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import EmailIcon from "@mui/icons-material/Email";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { Link } from "react-scroll";
-import { styled } from '@mui/system';
+import URL from '@mui/material/Link'; /*Had to change name since react-scroll dependency is named as Link*/
+
 
 export default function Footer() {
 
-   return (
+  return (
    <Box
       sx={{
         position:'static',
@@ -22,6 +23,7 @@ export default function Footer() {
         justifyContent: "space-around",
       }}
     >
+      {/* Left Side */}
       <Box
         sx={{
           display: "flex",
@@ -37,27 +39,30 @@ export default function Footer() {
         
             <Link
             to="home"
-            className="link"
+            className="nav"
             smooth
             style={{ color: "white", margin: "0.5rem 0", cursor: "pointer" }}
             >Home</Link>
             
             <Link
             to="about"
-            className="link"
+            className="nav"
             smooth
             style={{ color: "white", margin: "0.5rem 0", cursor: "pointer" }}
             >About</Link>
 
             <Link
             to="projects"
-            className="link"
+            className="nav"
             smooth
             style={{ color: "white", margin: "0.5rem 0", cursor: "pointer" }}
             >Projects</Link>
 
         </Box>
+{/* Insert Divider Here to Separate and make look Neat */}
+      <Divider orientation='vertical' flexItem/>
 
+      {/* Right Side */}
       <Box
         id='contact'
         sx={{
@@ -72,26 +77,36 @@ export default function Footer() {
           SOCIAL
         </Typography>
 
-        <Box sx={{ display: "flex", alignItems: "center", cursor: "pointer" }}>
+        <URL className='nav' underline='none' href='https://github.com/jaywooski' target='_blank' sx={{ display: "flex", justifyContent: "flex-start", cursor: "pointer", my:1 }}>
           <GitHubIcon sx={{ mr: 2, color: "white" }} />
-          <Typography variant="body2" sx={{ color: "white", my: 1 }}>
+          <Typography className='footer' variant="body2" sx={{ color: "white",  }}>
             GitHub
           </Typography>
-        </Box>
+        </URL>
 
-        <Box sx={{ display: "flex", alignItems: "center", cursor: "pointer" }}>
+        <URL alt='john.m.wooley@gmail.com' className='nav' underline='none' href='mailto:john.m.wooley@gmail.com' target='_blank' sx={{ display: "flex", /*flexDirection:'column',*/ my:1, justifyContent: "flex-start", cursor: "pointer" }}>
           <EmailIcon sx={{ mr: 2, color: "white" }} />
-          <Typography variant="body2" sx={{ color: "white", my: 1 }}>
-            Email
+          <Typography className='footer' variant="body2" sx={{ color: "white", textAlign:'left' }}>
+            Email 
+            <Divider  />
+              <Typography
+                // sx={{ mt: 0.5, ml: 9 }}
+                color="white"
+                // display="block"
+                variant="caption"
+              >
+                john.m.wooley@gmail.com
+              </Typography>
           </Typography>
-        </Box>
+          {/* <Typography variant='caption'>john.m.wooley@gmail.com</Typography> */}
+        </URL>
 
-        <Box sx={{ display: "flex", alignItems: "center", cursor: "pointer" }}>
+        <URL className='nav' underline='none' href='https://www.linkedin.com/in/john-m-wooley/' target='_blank' sx={{ display: "flex", my:1,  justifyContent: "flex-start", cursor: "pointer" }}>
           <LinkedInIcon sx={{ mr: 2, color: "white" }} />
-          <Typography variant="body2" sx={{ color: "white", my: 1 }}>
+          <Typography className='footer' variant="body2" sx={{ color: "white",  }}>
             LinkedIn
           </Typography>
-        </Box>
+        </URL>
       </Box>
     </Box>
     )

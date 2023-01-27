@@ -3,13 +3,11 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Menu, MenuItem, Paper } from '@mui/material';
-import { styled } from '@mui/system';
 import { Link } from 'react-scroll';
-import * as URL from '@mui/material/Link';
+// import URL from '@mui/material/Link'; /*May use in future*/
 
 
 export default function MobileHeader() {
@@ -36,8 +34,9 @@ export default function MobileHeader() {
     textTransform: 'uppercase',
     fontWeight: '700',
     color: 'white',
-    backgroundColor:'#1B3B91'
-    // backgroundColor: '#96bffa'
+    backgroundColor:'#1B3B91',
+    display:'flex',
+    flexDirection:'column'
 }
 
   return (
@@ -100,7 +99,8 @@ export default function MobileHeader() {
                   className='link'
                   onClick={handleClose}>
                 <MenuItem className='link' sx={menu_style} >
-                  Contact
+                  Email Me
+                  <Typography variant='caption'>john.m.wooley@gmail.com</Typography>
                 </MenuItem>
               </Box>
 
@@ -109,7 +109,7 @@ export default function MobileHeader() {
           <Typography variant="h6" component="div" sx={{ flexGrow: 1, letterSpacing: 7, textTransform: 'uppercase' }}>
             Jaywooski
           </Typography>
-          {/* <Button color="inherit" sx={{outline:'1px solid yellow'}}>Login</Button> */}
+      
         </Toolbar>
       </AppBar>
     </Box>

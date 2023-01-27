@@ -30,31 +30,6 @@ export default function Hero() {
         },
       }));
 
-      // const CustomDownloadButton = styled(Button)(({ theme }) => ({
-      //   // display: 'flex',
-      //   // justifyContent: 'center',
-      //   // alignContent: 'center',
-      //   border: "3px solid transparent",
-      //   backgroundColor: "#00C7FF",
-      //   color: "white",
-      //   width: "20%",
-      //   borderRadius: "25px",
-      //   "&:hover": {
-      //     border: "3px solid white",
-      //     backgroundColor: "transparent",
-      //     transition: 'ease-in-out',
-      //     transitionDuration: '400ms',
-      //     cursor: 'pointer'
-      //   },
-      //   [theme.breakpoints.down("md")]: {
-      //     width: "35%",
-      //   },
-      //   [theme.breakpoints.down("sm")]: {
-      //     width: "45%",
-      //   },
-      // }));
-    
-
     const CustomText = styled(Typography)(({theme}) => ({
         color: "white",
         textAlign: "center",
@@ -124,11 +99,11 @@ export default function Hero() {
         />
         <Box sx={{display: 'flex', justifyContent:'space-around', width:'100%'}}>
           {/* Create functionality for contact me button */}
-          <CustomButton href='mailto:john.m.wooley@gmail.com'>Contact Me</CustomButton>
+          <CustomButton href='mailto:john.m.wooley@gmail.com'>Email Me</CustomButton>
 
           {/* Custom Button for Downloading RESUME!!! */}
           <CustomButton variant='contained' onClick={download}>
-            <Download sx={{mr:1}}/> Resume
+            <div className='squeeze2'><Download sx={{mr:1}}/>Resume</div>
           </CustomButton>
           
         </Box>

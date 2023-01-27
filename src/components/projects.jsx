@@ -61,6 +61,8 @@ export default function Projects () {
             description={project.description}
             tags={project.tags}
             img={project.image}
+            source={project.source}
+            liveVersion={project.liveVersion}
           />
         ))}
       </CustomBox>

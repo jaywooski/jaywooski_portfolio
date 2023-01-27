@@ -1,6 +1,5 @@
 import * as React from 'react'
 import { Box, Typography } from '@mui/material'
-import { FileDownload } from '@mui/icons-material'
 import { styled } from '@mui/system'
 import Self_Portrait from '../assets/static/IMG_5069.jpg'
 
@@ -45,8 +44,7 @@ export default function About() {
     const ImageBox = styled(Box)(({theme}) => ({
         // insert styles here
         [theme.breakpoints.down('sm')]: {
-            // height: '',
-            // mx: 'auto'
+            // insert styles here
         },
         [theme.breakpoints.up('md')]: {
             width: '50%',
@@ -68,6 +66,7 @@ export default function About() {
                                     
                                 }}>About</Typography>
                 <Typography variant='h5' 
+                            classes='squeeze3'
                             sx={{
                                     color:'rgba(0,199,255,255)',
                                     letterSpacing:'10px',
@@ -92,7 +91,6 @@ export default function About() {
                         experiences for users on the web. I earned my certificate in full stack development from Vanderbilt University.
                         I have been building full-stack apps for a little over 2 years, doing freelance work. I look forward to collaborating
                         with a new friend or partner on any project to prove the sky is the limit! 
-                        {/* <span style={{letterSpacing: '3px',color:'#045ad6'}}>Reach out to me!</span> */}
                     </Typography>
                 </CustomTextBox>
                 

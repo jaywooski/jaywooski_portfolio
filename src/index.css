@@ -25,7 +25,6 @@ code {
 }
 
 .hero {
-  height: 250px;
   width: 250px;
 }
 
@@ -65,16 +64,47 @@ code {
   transform: scale(1.2, 1.2);
   transition: ease-in-out;
   transition-duration: 400ms;
+  /* filter: drop-shadow(0 0.5px 1px white); //maybe add later? */
   cursor: pointer;
 
 }
 
 .nav:active {
+  /* Perhaps adding later */
+}
 
+.squeeze2 {
+  display: flex;
+}
+
+@media (max-width: 350px) {
+  .footer {
+   display: none;
+  }
+}
+
+@media (max-width: 260px) {
+
+  .hero {
+    width: 50vw;
+  }
+
+  .squeeze {
+    display: none
+  }
+
+  .squeeze2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* .squeeze3 {
+    letter-spacing: 1px;
+  } */
 }
 
 /*small theme breakpoints with theme @ 600px*/
-@media screen & (max-width: 600px) {
+@media (max-width: 600px) {
   .download {
     width: 45%;
   }
