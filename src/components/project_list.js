@@ -2,6 +2,8 @@
 import QR_Code from '../assets/static/QR_Code_Preview.jpg'
 import PD_Image from '../assets/static/PD_Preview.png'
 import WA_Image from '../assets/static/Weather_App_Preview.png'
+import AG_Image from '../assets/static/Advice_Generator_Preview.jpg'
+import { Javascript } from '@mui/icons-material'
 
 export const project_list = [
     {
@@ -33,5 +35,16 @@ export const project_list = [
         liveVersion: 'https://jaywooski.github.io/Wooley-Weather-Dashboard-Chal-6/',
         id: 3
     },
+
+    {
+        title: 'Advice Generator',
+        description: `Here's an app that generates some helpful advice to live by.
+        Powered by the Advice Slip API Provider`,
+        image: AG_Image,
+        tags: ['Javascript', 'HTML', 'CSS', 'API'],
+        source: 'https://github.com/jaywooski/advice-generator-app-main',
+        liveVersion: 'https://jaywooski.github.io/advice-generator-app-main/',
+        id: 4
+    }
 
 ]
