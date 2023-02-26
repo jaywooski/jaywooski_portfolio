@@ -30,16 +30,22 @@ const ProjectCard = ({ title, description, tags, img, source, liveVersion }) => 
                     mb: 3,
                 }}
                 >
-                <Button /* Github Link */
-                    size="small"
-                    style={{ backgroundColor: "rgba(0,199,255,255)" }}
-                    variant="contained"
-                    href={source}
-                    target='_blank'
-                    className="nav"
-                >
-                   <GitHub /> Source Code
-                </Button>
+                {/* Only made for where the source code can not be found on github. I.e, I made my blogsite on wordpress. */}
+                {source ? (/*Button Component*/
+                    <Button /* Github Link */
+                        size="small"
+                        style={{ backgroundColor: "rgba(0,199,255,255)" }}
+                        variant="contained"
+                        href={liveVersion}
+                        target='_blank'
+                        className="nav"
+                    >
+                        <GitHub /> Source Code
+                    </Button> 
+                
+                ) : null }
+                    
+                     
                 <Button /* Live Deployment Link */
                     size="small"
                     style={{ backgroundColor: "rgba(0,199,255,255)" }}

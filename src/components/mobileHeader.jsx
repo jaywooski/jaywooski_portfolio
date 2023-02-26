@@ -7,7 +7,7 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Menu, MenuItem, Paper } from '@mui/material';
 import { Link } from 'react-scroll';
-// import URL from '@mui/material/Link'; /*May use in future*/
+import URL from '@mui/material/Link'; /*May use in future*/
 
 
 export default function MobileHeader() {
@@ -75,19 +75,19 @@ export default function MobileHeader() {
             {/* Add Links to pages to visit throughout portfolio */}
             <Paper className='menu mobile'>
               
-              <Link to='home' className='link' smooth onClick={handleClose}>
+              <Link to='home' smooth onClick={handleClose}>
                 <MenuItem className='link' sx={menu_style} >
                   Home
                 </MenuItem>
               </Link>
 
-              <Link to='about' className='link' smooth onClick={handleClose}>
+              <Link to='about' smooth onClick={handleClose}>
                 <MenuItem className='link' sx={menu_style} >
                   About Me
                 </MenuItem>
               </Link>
               
-              <Link to='projects' className='link' smooth onClick={handleClose}>
+              <Link to='projects' smooth onClick={handleClose}>
                 <MenuItem className='link' sx={menu_style} >
                   Projects
                 </MenuItem>
@@ -103,6 +103,10 @@ export default function MobileHeader() {
                   <Typography variant='caption'>john.m.wooley@gmail.com</Typography>
                 </MenuItem>
               </Box>
+
+              <URL href='https://jaywooski.com' target={'_blank'} onClick={handleClose}>
+                <MenuItem className='link' sx={menu_style} >BlogSite</MenuItem>
+              </URL>
 
             </Paper>
           </Menu>

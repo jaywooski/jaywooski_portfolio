@@ -5,6 +5,7 @@ import EmailIcon from "@mui/icons-material/Email";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { Link } from "react-scroll";
 import URL from '@mui/material/Link'; /*Had to change name since react-scroll dependency is named as Link*/
+import { PersonPinCircle } from '@mui/icons-material';
 
 
 export default function Footer() {
@@ -105,6 +106,13 @@ export default function Footer() {
           <LinkedInIcon sx={{ mr: 2, color: "white" }} />
           <Typography className='footer' variant="body2" sx={{ color: "white",  }}>
             LinkedIn
+          </Typography>
+        </URL>
+
+        <URL className='nav' underline='none' href='https://jaywooski.com' target='_blank' sx={{ display: "flex", my:1,  justifyContent: "flex-start", cursor: "pointer" }}>
+          <PersonPinCircle sx={{ mr: 2, color: "white" }} />
+          <Typography className='footer' variant="body2" sx={{ color: "white",  }}>
+            BlogSite
           </Typography>
         </URL>
       </Box>
