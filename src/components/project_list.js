@@ -5,6 +5,7 @@ import WA_Image from '../assets/static/Weather_App_Preview.png'
 import AG_Image from '../assets/static/Advice_Generator_Preview.jpg'
 import Blog_Img from '../assets/static/Logo_concept_2.jpg'
 import WA2_Image from "../assets/static/Weather2.0.jpg";
+import Netflix_img from "../assets/static/NC_img.jpg";
 // import { Javascript } from '@mui/icons-material'
 
 export const project_list = [
@@ -71,5 +72,15 @@ export const project_list = [
 		source: "https://github.com/jaywooski/weather-app-revamped",
 		liveVersion: "https://stately-manatee-33c931.netlify.app/",
 		id: 6,
+	},
+
+	{
+		title: "Netflix Clone",
+		description: `Here I have created a netflix clone to display my ability using Firebase, TailwindUI, and React`,
+		image: Netflix_img,
+		tags: ["TailwindUI", "React", "Firebase"],
+		source: "https://github.com/jaywooski/netflix_clone",
+		liveVersion: "https://netflix-clone-61781.web.app/",
+		id: 7,
 	},
 ];
