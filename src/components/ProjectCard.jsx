@@ -36,7 +36,7 @@ const ProjectCard = ({ title, description, tags, img, source, liveVersion }) => 
                         size="small"
                         style={{ backgroundColor: "rgba(0,199,255,255)" }}
                         variant="contained"
-                        href={liveVersion}
+                        href={source}
                         target='_blank'
                         className="nav"
                     >
