@@ -53,49 +53,74 @@ export default function About() {
     }))
 
   return (
-        <Box id='about' sx={{mt:0}}>
-            <Box sx={{/*maxWidth: 400,*/display: 'flex', }}>
-                <Typography variant='h5' 
-                            sx={{
-                                    color:'white',
-                                    letterSpacing:'10px',
-                                    textTransform: 'uppercase',
-                                    borderTop: '2px solid white',
-                                    // flexGrow: 1
-                                    width: '50%'
-                                    
-                                }}>About</Typography>
-                <Typography variant='h5' 
-                            classes='squeeze3'
-                            sx={{
-                                    color:'rgba(0,199,255,255)',
-                                    letterSpacing:'10px',
-                                    textTransform: 'uppercase',
-                                    backgroundColor: 'white',
-                                    width: '50%'
-                                    
-                                }}>Me</Typography>
-
-            </Box>
-            <CustomOuterBox id='about'>
-                    
-                <ImageBox 
-                    component='img'
-                    src={Self_Portrait}
-                />
-                <CustomTextBox classes='textBox'>
-                    <Typography variant='h4' sx={{padding: 3, borderBottom: '1px solid white'}}> My Experience</Typography>
-                    <Typography variant='h6' sx={{ maxHeight: '450px', overflow:'scroll', overflowX:'hidden', overflowY:'auto', backgroundColor:'#040d1a', paddingX: 1}}>
-                        Hello, My name is John Wooley. 
-                        I{`'`}m a full-stack developer, with history in computer engineering (University of Tennessee at Chattanooga) looking to help build more dynamic
-                        experiences for users on the web. I earned my certificate in full stack development from Vanderbilt University.
-                        I have been building full-stack apps for a little over 2 years, doing freelance work. I look forward to collaborating
-                        with a new friend or partner on any project to prove the sky is the limit! 
-                    </Typography>
-                </CustomTextBox>
-                
-
-            </CustomOuterBox>
-        </Box>
-  )
+		<Box
+			id="about"
+			sx={{ mt: 0 }}
+		>
+			<Box sx={{ /*maxWidth: 400,*/ display: 'flex' }}>
+				<Typography
+					variant="h5"
+					sx={{
+						color: 'white',
+						letterSpacing: '10px',
+						textTransform: 'uppercase',
+						borderTop: '2px solid white',
+						// flexGrow: 1
+						width: '50%',
+					}}
+				>
+					About
+				</Typography>
+				<Typography
+					variant="h5"
+					classes="squeeze3"
+					sx={{
+						color: 'rgba(0,199,255,255)',
+						letterSpacing: '10px',
+						textTransform: 'uppercase',
+						backgroundColor: 'white',
+						width: '50%',
+					}}
+				>
+					Me
+				</Typography>
+			</Box>
+			<CustomOuterBox id="about">
+				<ImageBox
+					component="img"
+					src={Self_Portrait}
+				/>
+				<CustomTextBox classes="textBox">
+					<Typography
+						variant="h4"
+						sx={{ padding: 3, borderBottom: '1px solid white' }}
+					>
+						{' '}
+						My Experience
+					</Typography>
+					<Typography
+						variant="h6"
+						sx={{
+							maxHeight: '450px',
+							overflow: 'scroll',
+							overflowX: 'hidden',
+							overflowY: 'auto',
+							backgroundColor: '#040d1a',
+							paddingX: 1,
+						}}
+					>
+						Hello, My name is John Wooley. I{`'`}m a full-stack
+						developer, with history in computer engineering
+						(University of Tennessee at Chattanooga) looking to help
+						build more dynamic experiences for users on the web. I
+						earned my certificate in full stack development from
+						Vanderbilt University. I have been building full-stack
+						apps for about five years, mainly doing freelance work.
+						I look forward to collaborating with a new friend or
+						partner on any project to prove the sky is the limit!
+					</Typography>
+				</CustomTextBox>
+			</CustomOuterBox>
+		</Box>
+  );
 }
