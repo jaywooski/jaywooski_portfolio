@@ -6,6 +6,7 @@ import AG_Image from '../assets/static/Advice_Generator_Preview.jpg'
 import Blog_Img from '../assets/static/Logo_concept_2.jpg'
 import WA2_Image from "../assets/static/Weather2.0.jpg";
 import Netflix_img from "../assets/static/NC_img.jpg";
+import Promptopia from "../assets/static/Promptopia.png" 
 // import { Javascript } from '@mui/icons-material'
 
 export const project_list = [
@@ -82,5 +83,14 @@ export const project_list = [
 		source: "https://github.com/jaywooski/netflix_clone",
 		liveVersion: "https://netflix-clone-61781.web.app/",
 		id: 7,
+	},
+	{
+		title: "Promptopia",
+		description: `I've created an AI prompt saving social media APP using NextJS, NextAuth, MaterialUI, and MongoDB`,
+		image: Promptopia,
+		tags: ["TMaterialUI", "NextJS", "MongoDB"],
+		source: "https://github.com/jaywooski/promptopia",
+		liveVersion: "https://promptopia-1yg3ut7mc-jaywooskis-projects.vercel.app/",
+		id: 8,
 	},
 ];
