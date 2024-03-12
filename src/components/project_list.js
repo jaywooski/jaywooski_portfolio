@@ -88,7 +88,7 @@ export const project_list = [
 		title: "Promptopia",
 		description: `I've created an AI prompt saving social media APP using NextJS, NextAuth, MaterialUI, and MongoDB`,
 		image: Promptopia,
-		tags: ["TMaterialUI", "NextJS", "MongoDB"],
+		tags: ["Material UI", "NextJS", "MongoDB"],
 		source: "https://github.com/jaywooski/promptopia",
 		liveVersion: "https://promptopia-1yg3ut7mc-jaywooskis-projects.vercel.app/",
 		id: 8,
