@@ -61,7 +61,7 @@ export const project_list = [
 		image: Blog_Img,
 		tags: ["Wordpress"],
 		source: null,
-		liveVersion: "https://jaywooski.com",
+		liveVersion: "https://jaywooski.wordpress.com/",
 		id: 5,
 	},
 
